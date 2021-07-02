@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivAddItemPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnAddPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Foto hinzufügen"
+        app:layout_constraintStart_toEndOf="@+id/ivAddItemPhoto"
+        app:layout_constraintTop_toTopOf="@+id/ivAddItemPhoto" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name hier"
+        app:layout_constraintStart_toStartOf="@+id/ivAddItemPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddItemPhoto" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Menge hier"
+        app:layout_constraintStart_toStartOf="@+id/ivAddItemPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddItemPhoto" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hinzufügen"
+        app:layout_constraintStart_toStartOf="@+id/editAmount"
+        app:layout_constraintTop_toBottomOf="@+id/editAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
